@@ -3,7 +3,7 @@
 Official implementation of **CombinationTS: A Modular Framework for Understanding Time-Series Forecasting Models** (ICML 2026).
 
 ## :fire:News
-- [05/01/2026] Our **CombinationTS** has been accepted to **ICML 2026**! 🎉
+- [2026-05-01] Our **CombinationTS** has been accepted to **ICML 2026**! 🎉
 
 ## Installation
 
