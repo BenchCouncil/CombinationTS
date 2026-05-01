@@ -1,0 +1,7 @@
+_target_: "modules.encoder.cnn_enc.TimesNetEnc"
+name: TimesNetEnc
+in_tensors: 1
+e_layers: 2
+d_ff: 32
+top_k: 5
+num_kernels: 6

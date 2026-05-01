@@ -1,0 +1,6 @@
+_target_: "modules.embedding.patch_embedding.PatchEmbedding"
+name: "Patch64"
+patch_len: 64
+stride: 32
+padding: ${eval:'16 if ${seq_len} == 336 else 32'}
+in_tensors: 1

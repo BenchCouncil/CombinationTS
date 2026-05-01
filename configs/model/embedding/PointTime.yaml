@@ -1,0 +1,7 @@
+_target_: "modules.embedding.point_embedding.PointEmbedding"
+name: PointTime
+use_positional: False
+use_temporal: True
+temporal_embed_type: "fixed"
+freq: ${dataset.freq}
+in_tensors: 1

@@ -1,0 +1,4 @@
+_target_: "modules.decoder.fre_ts_dec.FreTSDec"
+name: "FreTSDec"
+hidden_size: Null
+in_tensors: 1

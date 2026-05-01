@@ -1,0 +1,13 @@
+defaults:
+  - embedding: NoneEmb
+  - encoder: NoneEnc
+  - decoder: Linear
+  - _self_
+use_multi_stream: True
+share:
+  embedding: False
+  encoder: False
+  decoder: False
+# use_norm为False时，必须设置init_parameters为True
+use_norm: True
+learning_rate: 1e-4

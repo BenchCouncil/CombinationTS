@@ -1,0 +1,3 @@
+_target_: "modules.decoder.cd_linear_head.CDLinearHead"
+name: "CDLinear"
+in_tensors: 1

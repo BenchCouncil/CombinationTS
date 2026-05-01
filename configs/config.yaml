@@ -1,0 +1,121 @@
+hydra:
+  run:
+    dir: logs/run/${task_name}/${now:%Y-%m-%d_%H-%M-%S}
+  help:
+    app_name: CombinationTS
+  sweep:
+    dir: logs/multirun/${task_name}/${now:%Y-%m-%d_%H-%M-%S}
+    subdir: ${hydra.job.num}
+
+  job:
+    name: ${task_name}
+    env_set:
+      OMP_NUM_THREADS: 4
+      MKL_NUM_THREADS: 4
+  job_logging:
+    handlers:
+      file:
+        filename: ${hydra.runtime.output_dir}/log.txt
+
+dataset:
+  data: custom
+  embed: timeF
+  batch_size: ${model.batch_size}
+  seq_len: ${seq_len}
+  label_len: ${label_len}
+  pred_len: ${pred_len}
+  root_path: null
+  data_path: null
+  n_vars: null
+  features: M
+  target: OT
+  freq: h
+  seasonal_patterns: Monthly
+  num_workers: 2
+  augmentation_ratio: 0
+
+model:
+  seq_len: ${seq_len}
+  label_len: ${label_len}
+  pred_len: ${pred_len}
+  n_vars: ${n_vars}
+  dropout: 0.1
+  d_model: 512
+  channel_independence: True
+
+  learning_rate: 0.0001
+  lradj: type1  # type1, type2, TST
+  batch_size: 32
+
+  use_norm: True
+
+  use_multi_stream: False
+
+  use_multi_module_cfg: False
+
+  use_cycle: False
+  cycle:
+    _target_: layers.cycle.RecurrentCycle
+    cycle_len: 24
+    n_vars: ${n_vars}
+    seq_len: ${seq_len}
+    pred_len: ${pred_len}
+
+  # just for TimeMixer
+  post_decomp: False
+  post_decomp_kernel_size: 25
+
+  use_length_expansion: False
+  # add filter in encoder layer
+  use_filter: False
+  filter:
+    d_ff: ${eval:"${model.d_model} * 2"}
+    n_heads: 8
+    top_p: 0.5
+    alpha: 0.1
+  # add time feature to embedding out
+  use_time_feature: False
+  time_feature:
+    temporal_embed_type: "timeF"
+    freq: ${dataset.freq}
+  # wavelet in encoder layer
+  use_wavelet: False
+
+
+train:
+  loss: mse
+  lr: ${model.learning_rate}
+  lradj: ${model.lradj}
+  batch_size: ${model.batch_size}
+  pct_start: 0.2
+  patience: 3
+  epochs: 30
+  save_model: True
+  del_model: True
+  checkpoints: ./checkpoints/
+  save_res: False
+  save_pred: False
+  epoch_max_seconds: 600
+
+task_name: debug
+seq_len: 96
+label_len: 48
+pred_len: 96
+n_vars: ${dataset.n_vars}
+
+seed: 333
+batch_size: ${model.batch_size}
+inverse: False
+use_dtw: False
+use_gpu: True
+gpu_nums: 1
+gpu: auto
+gpu_type: cuda  # cuda or mps
+use_multi_gpu: False
+devices: 0,1,2,3
+setting: test
+debug: False
+output: ./results.txt
+
+use_json: False
+json_path: ./data.json

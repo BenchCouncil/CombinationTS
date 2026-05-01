@@ -1,0 +1,17 @@
+defaults:
+  - multi_stream: MultiScale
+  - embedding: Patch8
+  - encoder: PDM
+  - decoder: FMM
+  - _self_
+embedding:
+  channel_mixing: ${eval:"not ${model.channel_independence}"}
+channel_independence: True
+use_post_decomp: ${eval:"not ${model.channel_independence}"}
+use_norm: True
+use_multi_stream: True
+share:
+  embedding: True
+d_model: 32
+learning_rate: 0.01
+batch_size: 128

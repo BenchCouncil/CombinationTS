@@ -1,0 +1,11 @@
+defaults:
+  - embedding: NoneEmb
+  - encoder: NoneEnc
+  - decoder: Linear
+  # - decoder: cyclenet_mlp
+  - _self_
+use_cycle: True
+cycle:
+  cycle_len: 24
+d_model: 512
+learning_rate: 0.01

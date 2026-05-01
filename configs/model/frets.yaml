@@ -1,0 +1,9 @@
+defaults:
+  - embedding: Point
+  - encoder: FreTSEnc
+  - decoder: FreTSDec
+  - _self_
+use_norm: False
+d_model: 128
+learning_rate: 1e-4
+channel_independence: True

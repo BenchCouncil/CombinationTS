@@ -1,0 +1,7 @@
+_target_: "modules.embedding.point_embedding.PointEmbedding"
+name: "Point"
+channel_mixing: False
+use_positional: False
+use_temporal: False
+temporal_embed_type: timeF
+in_tensors: 1

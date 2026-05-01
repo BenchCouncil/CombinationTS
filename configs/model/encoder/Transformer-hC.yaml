@@ -1,0 +1,10 @@
+_target_: "modules.encoder.transformer_enc.TransformerEnc"
+name: "Transformer"
+e_layers: 1
+factor: 3
+n_heads: ${model.n_vars}
+d_ff: ${eval:"${model.d_model} * 4"}
+activation: "gelu"
+attention: "full_attention"
+use_swt: False
+in_tensors: 1

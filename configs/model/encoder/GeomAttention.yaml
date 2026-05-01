@@ -1,0 +1,15 @@
+_target_: "modules.encoder.transformer_enc.TransformerEnc"
+name: GeomAttention
+attention: "geom_attention"
+e_layers: 1
+factor: 1
+d_ff: 32
+activation: "gelu"
+use_swt: True  # always true for geom attention
+alpha: 0.3          # Weight of the inner product score in geometric attention
+requires_grad: True # Set to True to enable learnable wavelets
+wv: "db1"           # wavelet filter type, supports all wavelets available in PyTorch Wavelets
+m: 3                # number of levels for the stationary wavelet transform
+kernel_size: null   # Specify the length of randomly initialized wavelets (if not None)
+geomattn_dropout: 0.5 # dropout rate in geometric attention layer
+in_tensors: 1

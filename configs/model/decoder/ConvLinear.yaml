@@ -1,0 +1,4 @@
+_target_: "modules.decoder.conv_linear.ConvLinear"
+name: "ConvLinear"
+kernel_size: 8
+in_tensors: 1

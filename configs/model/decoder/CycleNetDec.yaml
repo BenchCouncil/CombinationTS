@@ -1,0 +1,2 @@
+_target_: "modules.decoder.cycle_net_dec.Head"
+name: CycleNetDec

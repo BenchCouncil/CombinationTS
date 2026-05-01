@@ -1,0 +1,12 @@
+defaults:
+  - embedding: Patch
+  - encoder: Transformer
+  - decoder: Linear
+  - _self_
+encoder:
+  e_layers: 1
+dropout: 0.1
+use_norm: True
+d_model: 512
+channel_independence: True
+learning_rate: 1e-4

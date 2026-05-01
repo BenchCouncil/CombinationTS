@@ -1,0 +1,5 @@
+_target_: "modules.decoder.linear_head.LinearHead"
+name: "Linear"
+init_parameters: False
+separate_length_proj: False
+in_tensors: 1

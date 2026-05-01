@@ -1,0 +1,3 @@
+_target_: "modules.embedding.channel_embedding.ChannelEmbedding"
+name: "Channel"
+in_tensors: 1

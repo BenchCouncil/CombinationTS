@@ -1,0 +1,12 @@
+defaults:
+  - embedding: Patch
+  - encoder: NoneEnc
+  - decoder: Linear
+  - _self_
+encoder:
+  e_layers: 0
+dropout: 0.1
+use_norm: True
+channel_independence: True
+d_model: 128
+learning_rate: 1e-3

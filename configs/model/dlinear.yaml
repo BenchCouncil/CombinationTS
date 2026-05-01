@@ -1,0 +1,13 @@
+defaults:
+  - multi_stream: TrendSeasonal
+  - embedding: NoneEmb
+  - encoder: NoneEnc
+  - decoder: Linear
+  - _self_
+use_multi_stream: True
+share:
+  decoder: False
+decoder:
+  init_parameters: True
+use_norm: False
+learning_rate: 1e-4

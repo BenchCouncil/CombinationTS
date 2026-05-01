@@ -1,0 +1,7 @@
+_target_: "modules.encoder.pdm_enc.PDMEnc"
+name: "PDM"
+e_layers: 2
+d_ff: 32
+decomp_method: "moving_avg"
+moving_avg: 25
+in_tensors: -1

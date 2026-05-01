@@ -1,0 +1,13 @@
+defaults:
+  - embedding: Channel
+  - encoder: Transformer
+  - decoder: Linear
+  - _self_
+use_norm: True
+encoder:
+  e_layers: 2
+  # d_ff: 128
+  factor: 3
+d_model: 128
+channel_independence: False
+learning_rate: 0.001

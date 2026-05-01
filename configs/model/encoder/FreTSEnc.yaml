@@ -1,0 +1,6 @@
+_target_: "modules.encoder.fre_ts_enc.FreTSEnc"
+name: FreTSEnc
+scale: 0.02
+sparsity_threshold: 0.01
+e_layers: 1
+in_tensors: 1

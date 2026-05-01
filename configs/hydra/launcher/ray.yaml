@@ -1,0 +1,7 @@
+ray:
+  init:
+    object_store_memory: null  # 一定要是 null，否则会报错
+  remote:
+    num_gpus: 1              # 每个任务分配一张 GPU
+    memory: null             # 可选，限制内存
+    resources: null          # 可选，自定义资源标签

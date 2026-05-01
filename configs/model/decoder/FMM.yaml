@@ -1,0 +1,3 @@
+_target_: "modules.decoder.future_multi_mixing.FutureMultiMixing"
+name: "FMM"
+in_tensors: -1

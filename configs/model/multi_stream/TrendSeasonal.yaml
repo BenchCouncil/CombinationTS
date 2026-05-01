@@ -1,0 +1,5 @@
+_target_: "layers.decompsition.TrendSeasonalDecomp"
+name: TrendSeasonal
+kernel_size: 25
+denorm_after_stack: False
+in_tensors: 1

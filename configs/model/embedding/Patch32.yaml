@@ -1,0 +1,6 @@
+_target_: "modules.embedding.patch_embedding.PatchEmbedding"
+name: "Patch32"
+patch_len: 32
+stride: 16
+padding: 16
+in_tensors: 1

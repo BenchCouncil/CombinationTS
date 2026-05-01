@@ -1,0 +1,4 @@
+_target_: "modules.encoder.mlp_enc.MLPEnc"
+name: "MLP"
+e_layers: 1
+in_tensors: 1

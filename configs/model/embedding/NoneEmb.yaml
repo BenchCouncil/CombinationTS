@@ -1,0 +1,4 @@
+_target_: "modules.embedding.none_embedding.NoneEmbedding"
+name: "NoneEmb"
+embed_dim: null
+in_tensors: 1

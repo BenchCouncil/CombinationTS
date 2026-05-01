@@ -1,0 +1,11 @@
+defaults:
+  - embedding: PointTime
+  - encoder: TimesNetEnc
+  - decoder: Linear
+d_model: 16
+embedding:
+  channel_mixing: ${eval:"not ${model.channel_independence}"}
+  use_position: True
+channel_independence: False
+use_length_expansion: True
+use_norm: True

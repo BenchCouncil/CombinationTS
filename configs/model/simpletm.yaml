@@ -1,0 +1,14 @@
+defaults:
+  - embedding: Channel
+  - encoder: GeomAttention
+  - decoder: Linear
+  - _self_
+encoder:
+  e_layers: 1
+  d_ff: 32
+# dropout: 0.1
+use_norm: True
+d_model: 32
+channel_independence: False
+learning_rate: 1e-3
+lradj: TST

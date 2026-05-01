@@ -1,0 +1,4 @@
+_target_: "modules.encoder.none_enc.NoneEnc"
+name: "NoneEnc"
+e_layers: 0
+in_tensors: -1

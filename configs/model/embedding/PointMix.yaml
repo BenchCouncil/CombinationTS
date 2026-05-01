@@ -1,0 +1,7 @@
+_target_: "modules.embedding.point_embedding.PointEmbedding"
+name: "PointMix"
+channel_mixing: True
+use_positional: True
+use_temporal: False
+temporal_embed_type: timeF
+in_tensors: 1

@@ -1,0 +1,7 @@
+_target_: "layers.decompsition.MultiScaleDecomp"
+name: MultiScale
+down_sampling_method: "avg"
+down_sampling_layers: 3
+down_sampling_window: 2
+denorm_after_stack: True
+in_tensors: 1

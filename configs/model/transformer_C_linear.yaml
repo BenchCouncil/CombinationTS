@@ -1,0 +1,10 @@
+
+defaults:
+  - embedding: NoneEmb-C
+  - encoder: Transformer
+  - decoder: Linear
+  - _self_
+channel_independence: False
+encoder:
+  n_heads: ${n_vars}
+# d_model 不生效
