@@ -1,6 +1,6 @@
 # CombinationTS
 
-Official implementation of **CombinationTS: A Modular Framework for Understanding Time-Series Forecasting Models** (ICML 2026).
+CombinationTS is a modular framework that decomposes, recombines, and diagnoses time-series forecasting models.
 
 ## :fire:News
 - [2026-05-01] Our **CombinationTS** has been accepted to **ICML 2026**! 🎉
