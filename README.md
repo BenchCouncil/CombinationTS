@@ -1,4 +1,5 @@
 # CombinationTS
+<p align="left"> <a href="https://arxiv.org/abs/2605.01231"> <img src="https://img.shields.io/badge/arXiv-2605.01231-b31b1b.svg"></a> <a href="https://creativecommons.org/licenses/by/4.0/"> <img src="https://img.shields.io/badge/License-CC%20BY%204.0-green.svg"></a> </p>
 
 CombinationTS is a modular framework that decomposes, recombines, and diagnoses time-series forecasting models.
 
@@ -51,10 +52,13 @@ python run.py \
 ## Citation
 
 ```bibtex
-@inproceedings{combinationts2026,
-  title={CombinationTS: A Modular Framework for Understanding Time-Series Forecasting Models},
-  author={Xiaorui Wang, Fanda Fan, Chenxi Wang, Yuxuan Yang, Rui Tang, Kuoyu Gao, simiao pang, Yuanfeng Shang, Zhipeng Liu, Wanling Gao, Lei Wang, Jianfeng Zhan},
-  booktitle={International Conference on Machine Learning (ICML)},
-  year={2026}
+@misc{wang2026combinationtsmodularframeworkunderstanding,
+  title={CombinationTS: A Modular Framework for Understanding Time-Series Forecasting Models}, 
+  author={Xiaorui Wang and Fanda Fan and Chenxi Wang and Yuxuan Yang and Rui Tang and Kuoyu Gao and Simiao Pang and Yuanfeng Shang and Zhipeng Liu and Wanling Gao and Lei Wang and Jianfeng Zhan},
+  year={2026},
+  eprint={2605.01231},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2605.01231}, 
 }
 ```
