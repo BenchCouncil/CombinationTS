@@ -52,13 +52,12 @@ python run.py \
 ## Citation
 
 ```bibtex
-@misc{wang2026combinationtsmodularframeworkunderstanding,
-  title={CombinationTS: A Modular Framework for Understanding Time-Series Forecasting Models}, 
-  author={Xiaorui Wang and Fanda Fan and Chenxi Wang and Yuxuan Yang and Rui Tang and Kuoyu Gao and Simiao Pang and Yuanfeng Shang and Zhipeng Liu and Wanling Gao and Lei Wang and Jianfeng Zhan},
+@inproceedings{
+  wang2026combinationts,
+  title={Combination{TS}: A Modular Framework for Understanding Time-Series Forecasting Models},
+  author={Xiaorui Wang and Fanda Fan and Chenxi Wang and Yuxuan Yang and Rui Tang and Kuoyu Gao and simiao pang and Yuanfeng Shang and Zhipeng Liu and Wanling Gao and Lei Wang and Jianfeng Zhan},
+  booktitle={Forty-third International Conference on Machine Learning},
   year={2026},
-  eprint={2605.01231},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2605.01231}, 
+  url={https://openreview.net/forum?id=CwHRT46VmC}
 }
 ```
